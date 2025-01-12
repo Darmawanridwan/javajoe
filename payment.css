@@ -1,0 +1,139 @@
+/* payment.css */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(https://i.pinimg.com/474x/59/d6/ce/59d6cee515a0db4e785e2ee66c274691.jpg);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333333c7;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+header .logo h1 {
+    color:  #ffbf00; /* Warna Kuning Tua */
+    font-size: 45px;
+    font-family: 'Poppins'; /* Menggunakan font Poppins */
+    margin-bottom: 20px; /* Memberikan jarak antara logo dan navbar */
+    text-shadow: 
+        2px 2px 0px black,  /* Bayangan kanan bawah */
+        -2px 2px 0px black, /* Bayangan kiri bawah */
+        2px -2px 0px black, /* Bayangan kanan atas */
+        -2px -2px 0px black; /* Bayangan kiri atas */
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: center; /* Menyusun navbar ke tengah */
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #fab700;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 8px 15px;
+}
+
+nav ul li a:hover {
+    text-decoration: rgb(94, 56, 1);
+    background-color: rgba(110, 62, 3, 0.723);
+    border-radius: 4px;
+}
+
+.payment-method {
+    background-color: rgba(255, 255, 255, 0.068);
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgb(247, 117, 3);
+}
+
+.payment-method h2 {
+    text-align: center;
+    color: #f7f6f6;
+    font-family: 'poppins';
+}
+
+.payment-method form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:#f7f6f6;
+}
+
+.payment-method label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.payment-method input, 
+.payment-method select {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.payment-method button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.payment-method button:hover {
+    background-color: #555;
+}
+.payment-method textarea {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical; /* Membolehkan pengguna untuk memperbesar textarea */
+}
+
+.payment-method button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px; /* Memberikan jarak antara textarea dan tombol */
+}
+
+.payment-method button:hover {
+    background-color: #f98c06;
+}
+
+
+footer {
+    background-color: #333333c7;
+    color: white;
+    text-align: center;
+    font-family: 'poppins';
+    padding: 10px;
+    margin-top: 30px;
+}

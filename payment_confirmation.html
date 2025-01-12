@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Confirmation - JavaJoe Cafe</title>
+    <link rel="stylesheet" href="payment_confirmation.css">
+</head>
+<body>
+
+    <section class="confirmation-details">
+        <h2>Payment Confirmation</h2>
+        <p>Thank you for your order, <strong id="user-name"></strong>!</p>
+        <p>Your payment has been successfully processed. Here are the details of your order:</p>
+
+        <div class="order-info">
+            <p><strong>Name:</strong> <span id="user-name-confirm"></span></p>
+            <p><strong>Address:</strong> <span id="user-address-confirm"></span></p>
+            <p><strong>Phone Number:</strong> <span id="user-phone-confirm"></span></p>
+            <p><strong>Payment Method:</strong> <span id="user-payment-method-confirm"></span></p>
+            <p><strong>Additional Notes:</strong> <span id="user-notes-confirm"></span></p>
+        </div>
+
+        <!-- Additional message -->
+        <p class="confirmation-message">
+            We are very happy to receive your order! Your order will be processed shortly, and we hope you are satisfied with what you’ve ordered. Thank you for choosing JavaJoe Cafe!
+        </p>
+
+        <button onclick="window.location.href='home.html'">Back to Home</button>
+    </section>
+
+    <script>
+        // Fetching values from URL parameters (query string)
+        const urlParams = new URLSearchParams(window.location.search);
+        document.getElementById('user-name').innerText = urlParams.get('name');
+        document.getElementById('user-name-confirm').innerText = urlParams.get('name');
+        document.getElementById('user-address-confirm').innerText = urlParams.get('address');
+        document.getElementById('user-phone-confirm').innerText = urlParams.get('phone');
+        document.getElementById('user-payment-method-confirm').innerText = urlParams.get('payment-method');
+        document.getElementById('user-notes-confirm').innerText = urlParams.get('notes');
+    </script>
+</body>
+</html>
